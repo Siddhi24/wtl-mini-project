@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+        <h1>Get FREE Consultation here</h1>
+        <h4><i>Superior finishes and trendy home designs at affordable prices</i> </h4>
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <!-- <div class="form-group">
+                
+                <input type="password" id="confirm_password" name="confirm_password">
+            </div> -->
+            <div class="form-group">
+                
+                <input type="text" id="country" name="country" placeholder="Country">
+            </div>
+            <div class="form-group">
+               
+                <input type="text" id="pincode" name="pincode" placeholder="Pincode">
+            </div>
+            
+            <div class="form-group">
+                
+                <input type="text" id="contact" name="contact" placeholder="Contact">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="gender" name="gender" value="male">Male
+                <input type="radio" id="gender" name="gender" value="female">Female
+            </div>
+            
+            <div class="form-group">
+                <label class="container1">Send me updates on Whatsapp <input type="checkbox"> <span class="checkmark"></span> </label>
+            </div>
+            <div class="btn"><input type="submit" value="Register"></div>
+        </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

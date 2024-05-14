@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background:url(../images/bg1.jpg)no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    height: 100%;
+}
+
+.container{
+    background: darkgray;
+    opacity: 0.9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px black, 0 6.7px 5.3px black, 0 12.8px 10.5px rgba(0,0,0,0.58) ;
+    width: 550px;
+    max-width: 100%;
+}
+
+.header{
+    background-color: black;
+    padding: 30px 0;
+}
+
+.header h2{
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form{
+    padding: 40px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    border: 2px solid lightslategray;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px;
+    display: block;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: black;
+}
+
+.form-control.success input{
+    border-color: orange;
+}
+
+.form-control.error input{
+    border-color: #df3434;
+}
+
+.form-control i {
+    position: absolute;
+    right: 12px;
+    top: 40px;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control small{
+    color: #df3434;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: greenyellow;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #df3434;
+    visibility: visible;
+}
+
+.form .btn{
+    background: black;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 20px;
+    padding: 15px 0;
+    margin-top: 15px;
+    width: 100%;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form .btn:hover{
+    background: greenyellow;
+}

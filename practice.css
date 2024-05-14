@@ -1,0 +1,20 @@
+
+  /* Select the <p> element and set the font size to 20px */
+  p {
+    font-size: 20px;
+  }
+  
+  /* Select every other letter in the <p> element and set the color to red */
+  p:nth-child(odd) {
+    color: red;
+  }
+  
+  /* Select every third letter in the <p> element and set the color to blue */
+  p:nth-child(3n) {
+    color: blue;
+  }
+  
+  /* Select every fourth letter in the <p> element and set the color to green */
+  p:nth-child(4n) {
+    color: green;
+  }
